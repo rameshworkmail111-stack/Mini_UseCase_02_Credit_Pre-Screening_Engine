@@ -5,28 +5,8 @@ config.local.*
 *.pem
 *.key
 
-# Data
-*.csv
-*.xlsx
-*.parquet
-data/
-
-# Python / notebooks
-__pycache__/
-*.pyc
-.ipynb_checkpoints/
-.venv/
-venv/
-env/
-
-# Models
-*.pkl
-*.h5
-*.pt
-*.onnx
-models/
-
-# OS
-.DS_Store
-Thumbs.db
-desktop.ini
+# Ignore everything except what we explicitly want
+*
+!README.md
+!.gitignore
+!*.ipynb
